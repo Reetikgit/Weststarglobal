@@ -2553,8 +2553,8 @@ footer a:active {
 	text-decoration: none;
 	border: none;
 	display: block;
-	width: 6rem;
-	height: 6.6rem;
+	width: 4rem;
+	height: 5.5rem;
 	line-height: 6.6rem;
 	text-align: center;
 	background: #000000;
@@ -2568,7 +2568,8 @@ footer a:active {
 
 #go-top a:hover,
 #go-top a:focus {
-	background: #ce1137;
+	background: #de1897;
+
 }
 
 /* ------------------------------------------------------------------- 
