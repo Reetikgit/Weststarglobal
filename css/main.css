@@ -1025,8 +1025,8 @@ input::-moz-focus-inner {
 .section-intro h2 {
 	font-family: "domine-bold", serif;
 	font-size: 4.8rem;
-	line-height: 1.25;
-	margin-bottom: 1.2rem;
+	line-height: 1;
+	margin-bottom: 1rem;
 }
 
 .section-intro h5 {
@@ -1122,7 +1122,7 @@ header .logo a {
 	border: none;
 	width: 96px;
 	height: 20px;
-	/*background: url("../images/logo.png") no-repeat center;*/
+	/*background: url("../images/WestLogo.png") no-repeat center;*/
 	background-size: 96px 20px;
 	font: 0/0 a;
 	text-shadow: none;
@@ -1354,7 +1354,7 @@ header .logo a {
  * ------------------------------------------------------------------- */
 #intro {
 	position: relative;
-	background-image: url(../images/intro-bg2.jpg);
+	background-image: url(../images/bg3.jpg);
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-position: center top;
@@ -1362,7 +1362,7 @@ header .logo a {
 	-moz-background-size: cover;
 	background-size: cover;
 	text-align: center;
-	padding-top: 15.6rem;
+	padding-top: 10rem;
 	overflow: hidden;
 }
 
@@ -1389,7 +1389,7 @@ header .logo a {
 }
 
 #intro .buttons {
-	margin-bottom: 4.2rem;
+	margin-bottom: 13rem;
 }
 
 #intro .buttons .button {
@@ -1405,7 +1405,7 @@ header .logo a {
 }
 
 #intro img {
-	vertical-align: bottom;
+	vertical-align: top;
 	max-width: 600px;
 	width: 100%;
 	box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.3);
@@ -1430,7 +1430,7 @@ header .logo a {
  * ------------------------------------------------------------------- */
 @media only screen and (max-width:1024px) {
 	#intro {
-		padding-top: 15rem;
+		padding-top: 13rem;
 	}
 
 	#intro h1 {
@@ -1470,7 +1470,7 @@ header .logo a {
 }
 @media only screen and (max-width:500px) {
 	#intro {
-		padding-top: 12rem;
+		padding-top: 15rem;
 	}
 
 	#intro h3 {
