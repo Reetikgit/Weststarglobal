@@ -1946,6 +1946,35 @@ header .logo a {
   }
 
 }
+
+@media screen and (max-width:350px) {
+  .series-content {
+    padding: 0 22px;
+  }
+  .s-series {
+
+  padding-top: 10rem;
+  margin-bottom: 20rem;
+  height: 80%;
+}
+  .series-img {
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center center;
+    background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 40%;
+  bottom: 0;
+  right: 0;
+
+}
+  .series-content .column:first-child,
+  .series-content .column:last-child {
+    padding: 0;
+  }
+
+}
 /* ===================================================================
  * 13. infos - (_layout.scss)
  *
