@@ -1485,6 +1485,7 @@ header .logo a {
 	text-align: center;
 	padding-top: 10rem;
 	overflow: hidden;
+
 }
 
 #intro .intro-content {
@@ -1631,6 +1632,9 @@ header .logo a {
 	#intro .buttons {
 		width: 100%;
 	}
+	#intro {
+		padding-bottom: 9rem;
+		} 
 }
 
 
@@ -1921,7 +1925,7 @@ header .logo a {
   .s-series {
 
   padding-top: 10rem;
-   margin-bottom: 10rem;
+  margin-bottom: 15rem;
   height: 80%;
 }
   .series-img {
