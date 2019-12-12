@@ -1932,6 +1932,7 @@ header .logo a {
   display: block;
   background-repeat: no-repeat;
   background-position: center center;
+    background-size: cover;
   position: absolute;
   top: 0;
   left: 40%;
