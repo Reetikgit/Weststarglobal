@@ -1745,7 +1745,7 @@ header .logo a {
  *
  * ------------------------------------------------------------------- */
 .s-series {
-  padding-top: 7rem;
+  padding-top:1rem;
 
   background-color: #050505;
   background-image: url(../images/pattern.jpg);
@@ -1788,6 +1788,7 @@ header .logo a {
   left: 50%;
   bottom: 0;
   right: 0;
+
 }
 
 .series-img::before {
@@ -1917,6 +1918,12 @@ header .logo a {
   .series-content {
     padding: 0 22px;
   }
+  .s-series {
+
+  padding-top: 10rem;
+   margin-bottom: 10rem;
+  height: 80%;
+}
   .series-img {
   display: block;
   background-repeat: no-repeat;
@@ -1926,6 +1933,7 @@ header .logo a {
   left: 40%;
   bottom: 0;
   right: 0;
+
 }
   .series-content .column:first-child,
   .series-content .column:last-child {
