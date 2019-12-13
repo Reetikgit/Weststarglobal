@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Weststar Global - About</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/base3.css">
+    <link rel="stylesheet" href="css/main2.css">
+    <link rel="stylesheet" href="css/vendor.css"> 
+    
+
+
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
+</head>
+
+<!-- Pre-Loader-css part starts
+    ================================================== -->
+<style type="text/css">
+    
+    #preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #151515;
+    z-index: 900;
+    height: 100%;
+    width: 100%;
+}
+
+.no-js #preloader,
+.oldie #preloader {
+    display: none;
+}
+
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 60px;
+    height: 60px;
+    margin: -30px 0 0 -30px;
+    padding: 0;
+}
+
+#loader:before {
+    content: "";
+    display: block;
+    height: 60px;
+    width: 60px;
+    -webkit-animation: rotate .9s infinite linear;
+    animation: rotate .9s infinite linear;
+    border: 10px solid #FFFFFF;
+    border-right-color: transparent;
+    border-radius: 50%;
+}
+
+@-webkit-keyframes rotate {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+
+}
+
+@keyframes rotate {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+
+}
+
+.menu-toggle {
+    width: 42px;
+    height: 42px;
+    display: block;
+    outline: 0;
+    background: #111111;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    -moz-transition: transform 0.4s ease-in-out;
+    -o-transition: transform 0.4s ease-in-out;
+    -webkit-transition: transform 0.4s ease-in-out;
+    -ms-transition: transform 0.4s ease-in-out;
+    transition: transform 0.4s ease-in-out;
+    -webkit-transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+}
+
+.menu-toggle span {
+    display: block;
+    background-color: #FFFFFF;
+    width: 24px;
+    height: 3px;
+    margin-top: -1.5px;
+    position: absolute;
+    right: 9px;
+    top: 50%;
+    bottom: auto;
+    left: auto;
+    font: 0/0 a;
+    text-shadow: none;
+    color: transparent;
+    -moz-transition: background 0.2s ease-in-out;
+    -o-transition: background 0.2s ease-in-out;
+    -webkit-transition: background 0.2s ease-in-out;
+    -ms-transition: background 0.2s ease-in-out;
+    transition: background 0.2s ease-in-out;
+}
+
+.menu-toggle span::before,
+.menu-toggle span::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: inherit;
+    position: absolute;
+    left: 0;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.menu-toggle span::before {
+    top: -8px;
+}
+
+.menu-toggle span::after {
+    bottom: -8px;
+}
+
+/* menu is open */
+.menu-is-open .menu-toggle {
+    -webkit-transform: translateX(-240px);
+    -ms-transform: translateX(-240px);
+    transform: translateX(-240px);
+}
+
+/* is clicked */
+.menu-toggle.is-clicked span {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.menu-toggle.is-clicked span::before,
+.menu-toggle.is-clicked span::after {
+    background-color: white;
+}
+
+.menu-toggle.is-clicked span::before {
+    top: 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.menu-toggle.is-clicked span::after {
+    bottom: 0;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+/* ------------------------------------------------------------------- 
+ * responsive:
+ * header section 
+ * ------------------------------------------------------------------- */
+
+/* ------------------------------------------------------------------- 
+ * off-canvas menu - (_layout.scss) 
+ * ------------------------------------------------------------------- */
+#menu-nav-wrap {
+    background: #111111;
+    color: rgba(255, 255, 255, 0.25);
+    font-family: "roboto-regular", sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    padding: 3.6rem 3rem;
+    height: 100%;
+    width: 240px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    visibility: hidden;
+    z-index: 800;
+    overflow-y: auto;
+    -webkit-transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    transform: translateX(100%);
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+#menu-nav-wrap a,
+#menu-nav-wrap a:visited {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+#menu-nav-wrap a:hover,
+#menu-nav-wrap a:focus,
+#menu-nav-wrap a:active {
+    color: white;
+}
+
+#menu-nav-wrap h3 {
+    color: white;
+    font-family: "roboto-bold", sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+}
+
+#menu-nav-wrap .nav-list {
+    margin: 1.8rem 0 1.5rem 0;
+    padding: 0 0 1.5rem 0;
+    list-style: none;
+    line-height: 3.6rem;
+}
+
+#menu-nav-wrap .nav-list li {
+    padding-left: 0;
+}
+
+#menu-nav-wrap .nav-list li a {
+    color: rgba(255, 255, 255, 0.25);
+}
+
+#menu-nav-wrap .nav-list li a:hover,
+#menu-nav-wrap .nav-list li a:focus {
+    color: white;
+}
+
+#menu-nav-wrap .sponsor-text span {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+#menu-nav-wrap .button {
+    margin: 0 0 1.2rem 0;
+    width: 100%;
+    display: block;
+    color: rgba(255, 255, 255, 0.5) !important;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+#menu-nav-wrap .button:hover,
+#menu-nav-wrap .button:focus {
+    color: white !important;
+}
+
+/* menu is open */
+.menu-is-open #menu-nav-wrap {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+    visibility: visible;
+    -webkit-overflow-scrolling: touch;
+}
+
+
+</style>
+
+<!-- pre-loader css part finished
+    ================================================== -->
+
+<body id="top">
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader"> 
+        <div id="loader"></div>
+   </div> 
+
+
+    <!-- header
+    ================================================== -->
+    <header class="s-header header">
+
+        <div class="header-logo">
+            <a class="site-logo" href="index.html">
+                <h1 style="color: orange;">About</h1>
+            </a>
+        </div>
+
+        <a class="menu-toggle" href="#"><span>Menu</span></a>       
+
+    </header> <!-- end s-header -->
+
+     <nav id="menu-nav-wrap">
+
+    <h3  style="color: orange;">Attractions</h3>    
+        <ul class="nav-list">
+            <li><a class="smoothscroll" href="#intro" title="" style="color: white;">Home</a></li>
+            <li><a class="smoothscroll" href="#service" title="" style="color: white;">Services</a></li>
+            <li><a class="smoothscroll" href="#infos" title=""  style="color: white;">Product Info</a></li>
+            <li><a class="smoothscroll" href="#stats" title=""  style="color: white;">Stats</a></li>
+            <li><a class="smoothscroll" href="#pricing" title=""  style="color: white;">Pricing</a></li>                    
+            <li><a class="smoothscroll" href="#testimonials" title=""  style="color: white;">Testimonials</a></li>  
+            <li><a class="smoothscroll" href="#download" title=""  style="color: white;">Download</a></li>  
+            <li><a class="smoothscroll" href="#subscribe" title=""  style="color: white;">Newsletter</a></li>           
+        </ul>
+
+        
+
+    </nav> <!-- /menu-nav-wrap -->
+
+
+    <!-- page header
+    ================================================== -->
+    <section class="page-header page-header--about">
+
+        <div class="gradient-overlay"></div>
+        <div class="row page-header__content">
+            <div class="column">
+                <h1>WESTSTAR GLOBAL</h1>
+            </div>
+        </div>
+
+    </section> <!-- end page-header -->
+
+
+    <!-- page content
+    ================================================== -->
+    <section class="page-content">
+
+        <div class="row">
+            <div class="column">
+
+
+                <p class="lead drop-cap">
+                WestStar Global is a professional and extensively experienced branding, PR and digital marketing agency based in Kolkata, offering a wide bracket of online marketing & web development solutions. We boast a competent, adept & reliable team of experts who are confidently capable of applying their digital branding knowledge in accordance with the goals & budget of your business and help it proliferate as per your objectives & requisites. 
+                </p>
+
+                
+
+                
+                    <p>
+                    From Google Ads certified social media strategists to highly experienced developers and designers knowledgeable of state-of-the-art website building platforms, we have dedicated professionals in the house who are adequately knowledgeable of their work. We currently offer marketing, development and content solutions such as blogging on food, fashion, travel, lifestyle, and much more. We are also well versed with the aspects of influencer & celebrity marketing and offer effectual services for the same.
+                    </p>
+                    <cite>
+                       
+                    </cite>
+                
+
+                <br>
+
+                <p>
+               
+                Thus, if you’re looking for an ideal web development and online marketing agency to partner with for taking care of your digital marketing, branding or PR needs, look no further than WestStar Global 
+                </p>
+                </blockquote>
+                
+            </div>
+        </div>
+    </section>
+    <!-- Social
+    ================================================== -->
+    <section class="s-social">
+            
+        <div class="row social-content">
+            <div class="column">
+                <ul class="social-list">
+                    <li class="social-list__item">
+                        <a href="#0" title="">
+                            <span class="social-list__icon social-list__icon--facebook"></span>
+                            <span class="social-list__text">Facebook</span>
+                        </a>
+                    </li>
+                    <li class="social-list__item">
+                        <a href="#0" title="">
+                            <span class="social-list__icon social-list__icon--twitter"></span>
+                            <span class="social-list__text">Twitter</span>
+                        </a>
+                    </li>
+                    <li class="social-list__item">
+                        <a href="#0" title="">
+                            <span class="social-list__icon social-list__icon--instagram"></span>
+                            <span class="social-list__text">Instagram</span>
+                        </a>
+                    </li>
+                    <li class="social-list__item">
+                        <a href="#0" title="">
+                            <span class="social-list__icon social-list__icon--email"></span>
+                            <span class="social-list__text">Email</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div> <!-- end social-content -->
+
+    </section> <!-- end s-social -->
+
+
+    <!-- footer
+    ================================================== -->
+    <footer class="s-footer" style="background-color:black;">
+
+        <div class="row footer-top">
+            <div class="column large-5 medium-full">
+                        <h4 class="h6">Our Services</h4>
+                        <ul class="footer-list">
+                            <li><a href="index.html">Home</a></li>    
+                            <li><a href="about.html">LinkDemo</a></li>
+                            <li><a href="volunteer.html">Services</a></li>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">LinkDemo</a></li>
+                            <li><a href="volunteer.html">Services</a></li>
+                            <li><a href="index.html">Home</a></li>    
+                            <li><a href="about.html">LinkDemo</a></li>
+                            <li><a href="volunteer.html">Services</a></li>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">LinkDemo</a></li>
+                            <li><a href="volunteer.html">Services</a></li>
+                            
+                        </ul>
+                    </div>
+
+            <div class="column large-half tab-full" style="margin-right:4em;">
+                <div class="row">
+                    <div class="column large-5 medium-full">
+                        <h4 class="h6">Our Location</h4>
+                        <p>
+                        1600 Amphitheatre Parkway <br>
+                        Mountain View, California <br>
+                        94043 US
+                        </p>
+        
+                        <p>
+                        <a href="https://goo.gl/maps/bc7C7eYtSmnNs6216" target="_blank" class="btn btn--footer">Get Direction</a>
+                        </p>
+                    </div>
+                    <div class="column large-5 medium-full">
+                        <h4 class="h6">Quick Links</h4>
+                        <ul class="footer-list">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">LinkDemo</a></li>
+                            <li><a href="volunteer.html">Services</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- end footer-top -->
+
+        <div class="row footer-bottom">
+            <div class="column ss-copyright">
+                <span>© Copyright Weststar Global</span> 
+                <span>Design by <a href="https://www.styleshout.com/">Chitragupt FreeLancers</a></span>
+            </div>
+        </div> <!-- footer-bottom -->
+
+        <div class="ss-go-top">
+            <a class="smoothscroll" title="Back to Top" href="#top">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0l8 9h-6v15h-4v-15h-6z"/></svg>
+            </a>
+        </div> <!-- ss-go-top -->
+
+    </footer> <!-- end s-footer -->
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+</body>

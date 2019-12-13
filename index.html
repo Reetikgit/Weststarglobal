@@ -34,6 +34,53 @@
 
 </head>
 
+<style type="text/css">
+
+/* Style the sidenav links and the dropdown button */
+.nav a, .dropdown-btn {
+  
+  text-decoration: none;
+  font-size: 15px;
+  color: #818181;
+ 
+  border: none;
+  background: none;
+  width:100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+/* On mouse-over */
+.nav a:hover, .dropdown-btn:hover {
+  color: #f1f1f1;
+}
+
+/* Main content */
+
+
+/* Add an active class to the active dropdown button */
+.active {
+  background-color:orange;
+  color: white;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container{
+  display: none;
+   
+   padding-left:20px;
+   font-size:0.8em;
+
+
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+</style>
 <body id="top">
 	
 	<!-- header 
@@ -55,8 +102,43 @@
 
    	<h3  style="color: orange;">Attractions</h3>   	
 		<ul class="nav-list">
-			<li><a class="smoothscroll" href="#intro" title="" style="color: white;">Home</a></li>
-			<li><a class="smoothscroll" href="#service" title="" style="color: white;">Services</a></li>
+			<li><a class="smoothscroll" href="#intro" title="" style="color: white;">Home</a>
+			
+			</li>
+			<li class="dropdown-btn" style="color: white;">Services
+
+			    <i class="fa fa-caret-down"></i>
+			</li>
+			  
+			  <div class="dropdown-container" class="smoothscroll">
+			    <a class="smoothscroll" href="#service">Graphic Design</a>
+			    <br>
+			    <a class="smoothscroll" href="#webdev">Web Development</a>
+			    <br>
+			    <a class="smoothscroll" href="#seo">SEO (Search Engine Optimization)</a>
+			    <br>
+			    <a class="smoothscroll" href="#contentcreation">Content Creation & Marketing</a>
+			    <br>
+			    <a class="smoothscroll" href="#leadsgen">Leads Generation Campaign </a>
+			    <br>
+			    <a class="smoothscroll" href="#bannerads">Banner Ads</a>
+			    <br>
+			    <a class="smoothscroll" href="#socialmedia">Social Media Marketing</a>
+			    <br>
+			    <a class="smoothscroll" href="#brandawarness">Brand Awareness Campaigns</a>
+			    <br>
+			    <a class="smoothscroll" href="#influencer">Influencer Marketing </a>
+			    <br>
+			    <a class="smoothscroll" href="#email">Email Marketing</a>
+			    <br>
+			    <a class="smoothscroll" href="#celeb">Celebrity Marketing</a>
+			    <br>
+			    <a class="smoothscroll" href="#affiliate">Affiliate Marketing</a>
+			    <br>
+			    <a class="smoothscroll" href="#posterdesig">Poster Design  </a>
+			    
+
+			  </div>
 			<li><a class="smoothscroll" href="#infos" title=""  style="color: white;">Product Info</a></li>
 			<li><a class="smoothscroll" href="#stats" title=""  style="color: white;">Stats</a></li>
 			<li><a class="smoothscroll" href="#pricing" title=""  style="color: white;">Pricing</a></li>					
@@ -65,16 +147,7 @@
 			<li><a class="smoothscroll" href="#subscribe" title=""  style="color: white;">Newsletter</a></li>			
 		</ul>
 
-		<!-- <h3>We Recommend Dreamhost</h3>  
-		<p class="sponsor-text">
-			Looking for an awesome and reliable webhosting? Try <a href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT">DreamHost</a>.
-			Get <span>$50 off</span> when you sign up with the promocode <span>styleshout</span>. 
-			<!-- Simply type	the promocode in the box labeled “Promo Code” when placing your order. 
-		</p>
-
-		<div class="action">
-			<a class="button" href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT">Sign Up Now</a>
-		</div> -->
+		
 
 	</nav> <!-- /menu-nav-wrap -->
 
@@ -103,7 +176,7 @@
 					<br>
 					<div class="buttons">
 						<a class="button stroke smoothscroll animate-intro" href="#service" title="">Our Services</a>
-						<a class="button stroke smoothscroll animate-intro" href="#main-footer" title="">About</a>
+						<a href="about.html" class="button stroke  animate-intro" title="">About</a>
 					</div>					
 
 								
@@ -998,6 +1071,22 @@
    <script src="js/jquery-2.1.3.min.js"></script>
    <script src="js/plugins.js"></script>
    <script src="js/main.js"></script>
+   <script type="text/javascript">
+   	var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+   </script>
 
 </body>
 
