@@ -2300,14 +2300,11 @@ header .logo a {
 .pricing-content {
 	margin-top: 3rem;
 	max-width: 1080px;
-	left:50%;
 }
 
 .pricing-content .bgrid {
 	margin-bottom: 3.9rem;
 	padding: 0 20px;
-	width: 100%;
-	left: 50%;
 }
 
 .pricing-content .price-block {
@@ -2316,14 +2313,12 @@ header .logo a {
 	padding: 6rem 0 4.8rem;
 	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 	position: relative;
-	left: 50%;
 }
 
 .pricing-content .price-block .bottom-part {
 	padding-top: 2.4rem;
 	padding-left: 3rem;
 	padding-right: 3rem;
-	left: 50%;
 }
 
 .pricing-content .price-block .plan-title {
@@ -2331,10 +2326,6 @@ header .logo a {
 	font-size: 2.4rem;
 	font-family: "roboto-bold";
 	position: relative;
-	width: 100%;
-	position: center;
-	align-self: center;
-	left: 50%;
 }
 
 .pricing-content .price-block .plan-title::after {
@@ -2346,7 +2337,7 @@ header .logo a {
 	position: absolute;
 	left: 50%;
 	bottom: 0;
-
+	margin-left: -40px;
 }
 
 .pricing-content .price-block .plan-price {
@@ -2356,7 +2347,6 @@ header .logo a {
 	line-height: 1;
 	margin-top: 4.2rem;
 	margin-bottom: 0;
-	left: 50%;
 }
 
 .pricing-content .price-block .plan-price sup {
@@ -2364,7 +2354,6 @@ header .logo a {
 	font-size: 2.4rem;
 	top: -3rem;
 	margin-right: 3px;
-	left: 50%;
 }
 
 .pricing-content .price-block .price-month {
@@ -2415,7 +2404,6 @@ header .logo a {
 .pricing-content .primary {
 	background: #002f68;
 	color: #FFFFFF;
-		left: 50%;
 }
 
 .pricing-content .primary::before {
@@ -2439,10 +2427,8 @@ header .logo a {
 	transform: translate(-50%);
 }
 
-
 .pricing-content .primary .plan-title {
 	color: #FFFFFF;
-	left: 50%;
 }
 
 .pricing-content .primary .plan-title::after {
