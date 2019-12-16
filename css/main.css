@@ -1797,7 +1797,7 @@ header .logo a {
 
 }
 
-.series-img::before {
+/*.series-img::before {
   content: "";
   position: absolute;
   top: 0;
@@ -1805,7 +1805,7 @@ header .logo a {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.8);
-}
+}*/
 
 /* ------------------------------------------------------------------- 
  * ## series content 
