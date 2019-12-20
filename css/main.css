@@ -446,7 +446,7 @@ img.pull-left {
 }
 
 .pace .pace-progress {
-	background: #FFFFFF;
+	background: orange;
 	position: fixed;
 	z-index: 901;
 	top: 0;
@@ -472,13 +472,13 @@ img.pull-left {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  background-color: #000000;
+ 
   position: absolute;
   top: 0;
   left: 0%;
   bottom: 0;
   right: 0;
-	background-image: url(../images/westheadd.png);
+  background-image: url(../images/intro-bg.jpg);
 	z-index: 900;
 	height: 100%;
 	width: 100%;
@@ -506,7 +506,7 @@ img.pull-left {
 	width: 60px;
 	-webkit-animation: rotate .9s infinite linear;
 	animation: rotate .9s infinite linear;
-	border: 10px solid #FFFFFF;
+	border: 10px solid orange;
 	border-right-color: transparent;
 	border-radius: 50%;
 }
