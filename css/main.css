@@ -1875,6 +1875,10 @@ header .logo a {
   {
   	width: 190%;
   }
+  h3
+  {
+  	font-size:2em;
+  }
 
 }
 
@@ -1967,6 +1971,10 @@ header .logo a {
 
   h2{
   	padding-top:7em;
+  }
+  h3
+  {
+  	font-size:2em;
   }
 
 }
