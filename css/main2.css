@@ -86,7 +86,9 @@
   }
 
 }
-
+@import url("fonts.css");
+@import url("font-awesome/css/font-awesome.min.css");
+@import url("nova/nova.css");
 
 /* ===================================================================
  * # base style overrides
@@ -1089,7 +1091,7 @@ input::-moz-focus-inner {
   padding: 0 0.125em 0 0;
   text-transform: uppercase;
   background: transparent;
-  color: #000000;
+  color: orange;
 }
 
 /* line definition style 
@@ -3131,13 +3133,14 @@ html.no-csstransitions .hero-content {
  *
  * ------------------------------------------------------------------- */
 .s-footer {
-  padding-top: 8rem;
+  padding-top:5rem;
   padding-bottom: 8rem;
   background-color: #3b0d11;
   font-family: "Open Sans", sans-serif;
   font-size: 1.7rem;
   line-height: 1.882;
   color: rgba(255, 255, 255, 0.5);
+  background-color: white;
 }
 
 .s-footer a {
@@ -3319,6 +3322,10 @@ html.no-csstransitions .hero-content {
     display: block;
     margin-right: 0;
   }
+  li,a
+  {
+    margin-left:15%;
+  }
 
   .footer-logo img {
     width: 116px;
@@ -3341,7 +3348,7 @@ html.no-csstransitions .hero-content {
   padding-top: 24rem;
   padding-bottom: 8rem;
   text-align: center;
-  background-color: #121212;
+  
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -3356,7 +3363,9 @@ html.no-csstransitions .hero-content {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #000000;
+  
+  
+background-image: url(../images/bg3.jpg);
   opacity: .7;
 }
 
@@ -3366,7 +3375,8 @@ html.no-csstransitions .hero-content {
   left: 0;
   width: 100%;
   height: 100%;
-  background: black;
+  background-image: url(../images/intro-bg.jpg);
+ 
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 90%);
   opacity: .5;
 }
