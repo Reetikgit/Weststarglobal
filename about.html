@@ -40,6 +40,33 @@
 <!-- Pre-Loader-css part starts
     ================================================== -->
 <style type="text/css">
+
+    /* ------------------------------------------------------------------- 
+ * pace.js styles - minimal  - (_document-setup.scss)
+ * ------------------------------------------------------------------- */
+.pace {
+    -webkit-pointer-events: none;
+    pointer-events: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+.pace-inactive {
+    display: none;
+}
+
+.pace .pace-progress {
+    background: orange;
+    position: fixed;
+    z-index: 901;
+    top: 0;
+    right: 100%;
+    width: 100%;
+    height: 6px;
+}
+
+
     
     #preloader {
     position: fixed;
@@ -75,7 +102,7 @@
     width: 60px;
     -webkit-animation: rotate .9s infinite linear;
     animation: rotate .9s infinite linear;
-    border: 10px solid #FFFFFF;
+    border: 10px solid orange;
     border-right-color: transparent;
     border-radius: 50%;
 }
@@ -362,38 +389,31 @@
 
     <!-- page content
     ================================================== -->
-    <section class="page-content" style="background-color:#1a1a1c;">
+<section class="page-content" style="background-color:#1a1a1c;">
 
-        <div class="row">
-            <div class="column">
+<div class="row">
+  <div class="column">
                 
 
-                <p class="lead drop-cap" style="color: white">
-                WestStar Global is a professional and extensively experienced branding, PR and digital marketing agency based in Kolkata, offering a wide bracket of online marketing & web development solutions. We boast a competent, adept & reliable team of experts who are confidently capable of applying their digital branding knowledge in accordance with the goals & budget of your business and help it proliferate as per your objectives & requisites. 
-                </p>
-
+<p class="lead drop-cap" style="color: white; letter-spacing:0.05rem; line-height: 2;">
+     WestStar Global is a professional and extensively experienced branding, PR and digital marketing agency based in Kolkata, offering a wide bracket of online marketing & web development solutions. We boast a competent, adept & reliable team of experts who are confidently capable of applying their digital branding knowledge in accordance with the goals & budget of your business and help it proliferate as per your objectives & requisites.    
+</p>
                 
+<p style="color:#fff">
+      From Google Ads certified social media strategists to highly experienced developers and designers knowledgeable of state-of-the-art website building platforms, we have dedicated professionals in the house who are adequately knowledgeable of their work. We currently offer marketing, development and content solutions such as blogging on food, fashion, travel, lifestyle, and much more. We are also well versed with the aspects of influencer & celebrity marketing and offer effectual services for the same.              
+</p>
+                    
+ <br>
 
-                
-                    <p style="color:#fff">
-                    From Google Ads certified social media strategists to highly experienced developers and designers knowledgeable of state-of-the-art website building platforms, we have dedicated professionals in the house who are adequately knowledgeable of their work. We currently offer marketing, development and content solutions such as blogging on food, fashion, travel, lifestyle, and much more. We are also well versed with the aspects of influencer & celebrity marketing and offer effectual services for the same.
-                    </p>
-                    <cite>
-                       
-                    </cite>
-                
-
-                <br>
-
-                <p style="color:orange">
-               
-                Thus, if you’re looking for an ideal web development and online marketing agency to partner with for taking care of your digital marketing, branding or PR needs, look no further than WestStar Global 
-                </p>
+<p style="color:orange">
+         Thus, if you’re looking for an ideal web development and online marketing agency to partner with for taking care of your digital marketing, branding or PR needs, look no further than WestStar Global.
+</p>
             
+               
                 
-            </div>
         </div>
-    </section>
+    </div>
+ </section>
 
     <!-- footer
     ================================================== -->
