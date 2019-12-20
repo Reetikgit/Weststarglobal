@@ -478,7 +478,7 @@ img.pull-left {
   left: 0%;
   bottom: 0;
   right: 0;
-  background-image: url(../images/intro-bg.jpg);
+  background-image: url(../images/bg3.jpg);
 	z-index: 900;
 	height: 100%;
 	width: 100%;
@@ -507,6 +507,7 @@ img.pull-left {
 	-webkit-animation: rotate .9s infinite linear;
 	animation: rotate .9s infinite linear;
 	border: 10px solid orange;
+
 	border-right-color: transparent;
 	border-radius: 50%;
 }
@@ -515,6 +516,7 @@ img.pull-left {
 	0% {
 		-webkit-transform: rotate(0deg);
 		transform: rotate(0deg);
+
 	}
 
 	100% {
@@ -1968,7 +1970,7 @@ header .logo a {
   background-position: center center;
   background-size: cover;
   position: absolute;
-  top: -10%;
+  top: 0%;
   left: 10%;
   bottom: 0;
   right: 0;
