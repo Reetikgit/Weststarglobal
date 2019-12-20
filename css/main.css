@@ -467,7 +467,18 @@ img.pull-left {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background: #151515;
+	background-color: black;
+	display: block;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-color: #000000;
+  position: absolute;
+  top: 0;
+  left: 0%;
+  bottom: 0;
+  right: 0;
+	background-image: url(../images/westheadd.png);
 	z-index: 900;
 	height: 100%;
 	width: 100%;
@@ -1957,7 +1968,7 @@ header .logo a {
   background-position: center center;
   background-size: cover;
   position: absolute;
-  top: -25%;
+  top: -10%;
   left: 10%;
   bottom: 0;
   right: 0;
