@@ -1957,12 +1957,12 @@ header .logo a {
   background-position: center center;
   background-size: cover;
   position: absolute;
-  top: 0;
-  left: 0%;
+  top: -25%;
+  left: 10%;
   bottom: 0;
   right: 0;
   
-  background-size:100% 50%;
+  background-size:100% 45%;
 
 
 }
