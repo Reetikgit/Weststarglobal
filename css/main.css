@@ -1832,7 +1832,8 @@ header .logo a {
  * ------------------------------------------------------------------- */
 .series-content__buttons {
   padding-bottom: 4.8rem;
-  margin-top: 1.6rem;
+  padding-top: 2rem;
+  margin-top: 6rem;
   margin-bottom: 3.2rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
@@ -1840,6 +1841,7 @@ header .logo a {
 .series-content__buttons .btn {
   background-color: #000000;
   border-color: #000000;
+  size: 500px;
 }
 
 .series-content__buttons .btn:hover,
@@ -1853,7 +1855,7 @@ header .logo a {
  * responsive:
  * series
  * ------------------------------------------------------------------- */
-@media screen and (max-width:1400px) {
+@media screen and (min-width:1000px) {
   .series-content {
     padding: 12rem 4rem 8.8rem;
   }
@@ -1864,6 +1866,14 @@ header .logo a {
 
   .series-content .column:last-child {
     padding-left: 4.4rem;
+  }
+  .series-content__buttons2 .btn
+  {
+  	width: 150%;
+  }
+   .series-content__buttons3 .btn
+  {
+  	width: 190%;
   }
 
 }
@@ -1890,6 +1900,7 @@ header .logo a {
   .series-content .column:last-child {
     padding: 0 16px;
   }
+  
 
 }
 
@@ -1919,6 +1930,7 @@ header .logo a {
     height: 3.6rem;
     width: 3.6rem;
   }
+
 
 }
 
@@ -1979,7 +1991,7 @@ header .logo a {
 }
   .series-content .column:first-child,
   .series-content .column:last-child {
-    padding: 0;
+    padding:0;
   }
 
 }
@@ -2895,8 +2907,8 @@ footer a:active {
 }
 
 .footer-info {
-	padding-top: 6.6rem;
-	padding-bottom:2rem;
+	padding-top:1rem;
+	padding-bottom:1rem;
 }
 
 .footer-info a,
